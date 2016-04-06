@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello</title>
+</head>
+
+<body>
+ {% include 'navbar' %}
+    <header>ENTER MOVIE</header>
+    <br>
+    <div>
+        <!-- at the action is where you select route for the information posted on the form -->
+        <form class="col-sm-12" action="/movies" method="post">
+            <div class="form-group">
+                <input type="text" name="title" class="form-control" placeholder="title">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" name="director" class="form-control" placeholder="Director">
+            </div>
+            <br>
+            <div class="form-group">
+                <!--combobox/dropdown-->
+                <select class="form-control" name="category">
+                    <option>Comedy</option>
+                    <option>Horror</option>
+                    <option>Action</option>
+                    <option>Reality Series</option>
+                    <option>Documentaries</option>
+                    <option>Thriller</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="number" name="rating" class="form-control" placeholder="rating">
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "project-aardvark",
+  "version": "1.0.0",
+  "description": "''\u001b[Dthis is a movie listing style'",
+  "main": "index.js",
+  "scripts": {
+    "test": "''\u001b[Dhello world'"
+  },
+  "keywords": [
+    "''\u001b[Dmovie'",
+    "'idbm'"
+  ],
+  "author": "''\u001b[Djoseph bill'",
+  "license": "MIT",
+"dependencies": {
+    "body-parser": "^1.14.1",
+    "consolidate": "^0.13.1",
+    "cookie-parser": "^1.4.0",
+    "dispatch": "^1.0.0",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "jade": "^1.11.0",
+    "mongoose": "^4.2.6",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^3.1.0",
+    "tinyliquid": "^0.2.30"
+
+
+  }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit {{ movie.title }}</title>
+</head>
+<body>
+  {% include 'navbar' %}
+
+	<form action="/movies/{{ movie._id}}/edit" method="POST">
+		<label for="">Title</label>
+		<input type="text" name="title" value="{{ movie.title }}" placeholder="title">
+		<br>
+	
+		<label for="">Year of release</label>
+		<input type="number" name="year_of_release" value="{{ movie.year_of_release }}" placeholder="year of release">
+		<br>
+		<label for="">Rating</label>
+		<input type="number" name="rating" value="{{ movie.rating }}" placeholder="rating">		
+		<br>
+		<button type="submit">Edit movie</button>
+	</form>
+</body>
+</html>

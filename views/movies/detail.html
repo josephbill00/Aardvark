@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ movie.title }}</title>
+</head>
+
+<body>
+    <h1>{{movie.title}}</h1>
+    <p>Released in: {{ movie.year_of_release }}</p>
+    <p>Rating: {{ movie.rating}}</p>
+    <a href="/movies/{{movie._id}}/edit">Edit movie</a>
+    <a href="/movies/{{movie._id}}/delete" >Delete movie</a>
+</body>
+
+</html>

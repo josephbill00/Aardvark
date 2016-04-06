@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        <li><a href="/movies">Movies</a></li>
+        <li><a href="/movies/new">Add movie</a></li>
+    {% if user %}
+    <li><a href="/logout">logout</a></li>
+    {% endif %}
+    </ul>
+</nav>
